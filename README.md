@@ -8,7 +8,7 @@ Try to view this image under black background:
 
 ## Usage
 
-```
+```bash
 npm install --save image-hide
 ```
 
