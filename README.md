@@ -1,4 +1,4 @@
-## image-hide
+# image-hide
 
 Put a secret image into another image using alpha channel magic.
 
