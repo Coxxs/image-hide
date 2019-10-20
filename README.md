@@ -16,9 +16,9 @@ npm install --save image-hide
 const fs = require('fs')
 const hide = require('image-hide')
 
+// Size (width & height) of these images should be same.
 let imageA = fs.readFileSync('a.png')
 let imageB = fs.readFileSync('b.png')
-// Size (Width & Height) of these images should be same.
 
 fs.writeFileSync('result.png', Buffer.from(hide(imageA, imageB)))
 ```
