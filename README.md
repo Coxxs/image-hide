@@ -18,6 +18,7 @@ const hide = require('image-hide')
 
 let imageA = fs.readFileSync('a.png')
 let imageB = fs.readFileSync('b.png')
+// Size (Width & Height) of these images should be same.
 
 fs.writeFileSync('result.png', Buffer.from(hide(imageA, imageB)))
 ```
