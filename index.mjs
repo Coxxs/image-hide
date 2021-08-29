@@ -1,7 +1,7 @@
-const decode = require('image-decode')
-const encode = require('image-encode')
+import decode from 'image-decode'
+import encode from 'image-encode'
 
-function hide(foreground, background) {
+export default function hide(foreground, background) {
     let image_a = decode(foreground)
     let image_b = decode(background)
     if (image_a.height != image_b.height || image_a.width !== image_b.width) {
@@ -30,5 +30,3 @@ function hide(foreground, background) {
 function getPixelAvg(r, g, b, a, bg = 0) {
     return (r + g + b) / 3 * (a / 255) + bg * (1 - a / 255)
 }
-
-module.exports = hide
