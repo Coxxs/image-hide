@@ -1,6 +1,6 @@
 {
   "name": "image-hide",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Put a secret image into another image using alpha channel magic.",
   "main": "index.mjs",
   "scripts": {
