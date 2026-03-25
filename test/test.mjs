@@ -1,10 +1,11 @@
 import fs from 'fs'
-import assert from 'assert'
+import { describe, it } from 'node:test'
+import assert from 'node:assert'
 import hide from '../index.mjs'
 import decode from 'image-decode'
 
-describe('image-hide', function() {
-  it('should merge image', function() {
+describe('image-hide', () => {
+  it('should merge image', () => {
     let image_a = fs.readFileSync('./test/a.png')
     let image_b = fs.readFileSync('./test/b.png')
 
